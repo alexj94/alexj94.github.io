@@ -160,6 +160,10 @@ img {
     max-height: 100%
 }
 
+.pub-descr{
+  margin: 5px 0;
+}
+
 .paper .description {
   width: 65%;
   padding: 10px;
