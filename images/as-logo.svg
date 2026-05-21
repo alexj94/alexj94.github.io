@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" role="img" aria-label="AS logo">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#7ef0c8"/>
+      <stop offset="100%" stop-color="#4fb8ff"/>
+    </linearGradient>
+  </defs>
+  <rect x="6" y="6" width="84" height="84" rx="20" fill="#0b1a2a"/>
+  <rect x="8" y="8" width="80" height="80" rx="18" fill="none" stroke="url(#g)" stroke-width="4"/>
+  <path d="M26 64 L40 30 L54 64" fill="none" stroke="url(#g)" stroke-linecap="round" stroke-linejoin="round" stroke-width="7"/>
+  <path d="M32 51 H48" fill="none" stroke="url(#g)" stroke-linecap="round" stroke-width="6"/>
+  <path d="M68 31 C61 31 56 35 56 40 C56 47 62 49 67 50 C72 51 76 53 76 58 C76 63 71 67 64 67 C59 67 54 65 50 61" fill="none" stroke="#ffd07a" stroke-linecap="round" stroke-width="6"/>
+</svg>

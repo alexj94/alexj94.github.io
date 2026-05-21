@@ -89,6 +89,19 @@ body.light-theme {
   letter-spacing: 0.01em;
 }
 
+.name-with-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.mini-logo {
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.35);
+}
+
 .hero-topbar {
   display: flex;
   align-items: center;
@@ -344,6 +357,15 @@ body.light-theme {
   font-style: italic;
 }
 
+.site-footer {
+  margin-top: 32px;
+  padding-top: 14px;
+  border-top: 1px solid var(--line);
+  color: var(--text-soft);
+  font-size: 0.9rem;
+  text-align: center;
+}
+
 .footer-note a {
   color: var(--accent-2);
   text-decoration: none;
@@ -382,6 +404,10 @@ body.light-theme {
     justify-content: center;
   }
 
+  .name-with-logo {
+    justify-content: center;
+  }
+
   .hero-topbar {
     width: 100%;
     justify-content: center;
@@ -404,6 +430,10 @@ body.light-theme {
   }
 
   .footer-note {
+    text-align: left;
+  }
+
+  .site-footer {
     text-align: left;
   }
 }

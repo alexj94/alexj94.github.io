@@ -10,6 +10,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="images/as-logo.svg">
   <link rel="stylesheet" href="stylesheet.css">
 </head>
 
@@ -323,15 +324,22 @@
       </article>
     </section>
 
+    <footer class="site-footer">&copy; <span id="current-year"></span> Alessandro Simoni. All rights reserved.</footer>
+
   </main>
 
   <script>
     (function () {
+      var currentYear = document.getElementById("current-year");
       var yearFilter = document.getElementById("year-filter");
       var groupFilter = document.getElementById("group-filter");
       var resultsCount = document.getElementById("results-count");
       var emptyState = document.getElementById("empty-state");
       var cards = Array.from(document.querySelectorAll(".publication-card"));
+
+      if (currentYear) {
+        currentYear.textContent = new Date().getFullYear();
+      }
 
       function collectUniqueValues(attribute) {
         var values = cards.flatMap(function (card) {
